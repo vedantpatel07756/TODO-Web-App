@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+   <link rel="shortcut icon" href="favicon.webp" type="image/x-icon">
+
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/fontawesome.min.css" integrity="sha512-SgaqKKxJDQ/tAUAAXzvxZz33rmn7leYDYfBP+YoMRSENhf3zJyx3SBASt/OfeQwBHA1nxMis7mM3EV/oYT6Fdw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <title>TODO LIST</title>
+</head>
+<body>
+<div class="container">
+    <div class="message">
+        <p>Welcome back, <span id="name">Vedant</span> <img src="edit.svg" alt="" srcset="" width="15" onclick="edit()" > </p>
+        <p> You,ve got <span id="count">0</span> tasks coming up in the next days.</p>
+        <!-- Add task button -->
+        <div class="input">    
+                <input type="text" name="" id="input" placeholder="Add a new task..." >
+                <button onclick="addtask()">ADD</button>
+        </div>
+
+        <!-- Tasks list container-->
+        <ul id='taskList' type="none"> 
+            <!-- <li data-id="1" id="new">   <input type="checkbox"/>  <a href=""> Buy groceries at home </a></li> -->
+        </ul>
+    </div>
+</div>
+</body>
+<script src="script.js"></script>
+</html>
